@@ -15,7 +15,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="bg-[#412567]">
+    <header class="bg-[#1A0B2E]">
       <nav
         class="text-white max-w-[1200px] mx-auto flex justify-between items-center px-3 py-5"
       >
@@ -25,15 +25,62 @@
             >Wave</span
           >
         </p>
-        <ul class="flex items-center gap-4">
+        <ul class="hidden md:flex items-center gap-4 ">
           <li class="px-3 py-1 rounded hover:bg-[#7144b1] hover:duration-500">
             <a href="#">About</a>
           </li>
-          <li class="px-3 py-1 rounded hover:bg-[#7144b1] hover:duration-500"><a href="#">Episodes</a></li>
-          <li class="px-3 py-1 rounded hover:bg-[#7144b1] hover:duration-500"><a href="#">Host</a></li>
+          <li class="px-3 py-1 rounded hover:bg-[#7144b1] hover:duration-500">
+            <a href="#">Episodes</a>
+          </li>
+          <li class="px-3 py-1 rounded hover:bg-[#7144b1] hover:duration-500">
+            <a href="#">Host</a>
+          </li>
         </ul>
-        <button class="bg-linear-to-t from-[#2dc2fd] to-[#2dfdb1] rounded-full py-2 px-3 font-bold text-[#4b4b4b]">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        <button
+          class="hidden md:block bg-linear-to-t from-[#2dc2fd] to-[#2dfdb1] rounded-full py-2 px-3 font-bold text-[#4b4b4b]"
+        >
+          Subscribe <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <div class="md:hidden">
+            <img src="./assets/hamburger-menu.png" alt="">
+        </div>
       </nav>
+      <!-- hero section  -->
+      <section class="hero bg-[#1A0B2E]">
+        <div
+          class="flex flex-col justify-center items-center bg-[url('./assets/hero-bg.png')] bg-contain md:bg-cover bg-center bg-no-repeat  pt-20"
+        >
+          <div class="relative">
+            <img class="w-[200px] md:w-[420px]" src="./assets/hero-circle.png" alt="" />
+            <img class="w-[50px] md:w-[120px] absolute top-[65px] md:top-[120px] left-[78px] md:left-[147px]" src="./assets/microphone.png" alt="">
+            <button
+                class="absolute top-2.5 md:top-[30px] right-0 md:right-5 bg-[#00FF88] shadow shadow-[#00FF88] rounded-full py-1 md:py-2 px-4 md:px-5 font-bold text-[#4b4b4b] text-sm"
+              >
+               NEW
+              </button>
+          </div>
+        
+          <div class=" text-center py-8">
+            <h1 class="text-6xl font-extrabold text-white">TechWave</h1>
+            <p class="text-white mt-3 mb-10">
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+            <div class="flex justify-center items-center gap-5">
+              <button
+                class="bg-linear-to-t from-[#2dc2fd] to-[#2dfdb1] flex justify-center items-center gap-2 rounded-full py-2 px-3 font-bold text-[#4b4b4b]"
+              >
+               <img src="./assets//spotify.png" alt=""> Listen on Spotify
+              </button>
+              <button
+                class="flex justify-center items-center gap-2 rounded-full py-2 px-3 font-bold text-[#00FF88] border border-[#00FF88]"
+              >
+               <i class="fa-regular fa-envelope"></i>Subscribe</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>
