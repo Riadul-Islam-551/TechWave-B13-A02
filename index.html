@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1 class="text-2xl font-bold">hello!!!</h1>
+    <header class="bg-[#412567]">
+      <nav
+        class="text-white max-w-[1200px] mx-auto flex justify-between items-center px-3 py-5"
+      >
+        <p class="text-4xl font-extrabold">
+          Tech<span
+            class="bg-linear-to-t from-[#2dc2fd] to-[#2dfdb1] bg-clip-text text-transparent"
+            >Wave</span
+          >
+        </p>
+        <ul class="flex items-center gap-4">
+          <li class="px-3 py-1 rounded hover:bg-[#7144b1] hover:duration-500">
+            <a href="#">About</a>
+          </li>
+          <li class="px-3 py-1 rounded hover:bg-[#7144b1] hover:duration-500"><a href="#">Episodes</a></li>
+          <li class="px-3 py-1 rounded hover:bg-[#7144b1] hover:duration-500"><a href="#">Host</a></li>
+        </ul>
+        <button class="bg-linear-to-t from-[#2dc2fd] to-[#2dfdb1] rounded-full py-2 px-3 font-bold text-[#4b4b4b]">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+      </nav>
+    </header>
   </body>
 </html>
